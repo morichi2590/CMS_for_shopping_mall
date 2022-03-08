@@ -1,0 +1,1 @@
+# CMS_for_shopping_mall
