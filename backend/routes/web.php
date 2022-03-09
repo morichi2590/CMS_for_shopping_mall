@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/create_token', function(){
+
+    $user = \App\Models\Admin::find(1);
+    $token = $user->createToken('my-api-token');
+    echo $token->plainTextToken;
+    
+});
