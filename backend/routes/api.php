@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// POSTMANでURLに対してtokenつけて叩くとユーザーの情報を送れる
+// ただし、SPAのログインとして考えた場合はTokenの受け渡しはどのようにすべきか？それを次回更新する
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
